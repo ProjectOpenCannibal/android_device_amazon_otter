@@ -109,6 +109,7 @@ BOARD_USES_TI_CAMERA_HAL := false
 
 TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/amazon/otter/recovery/recovery_ui.c
+BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
 
 # Do da wifi
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
