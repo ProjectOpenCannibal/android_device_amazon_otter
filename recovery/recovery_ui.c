@@ -72,6 +72,17 @@ int touchY=0;
 */
 int minimum_storage=900;
 
+// define the max number of rows to list when scrolling through a menu
+int max_rows=27;
+// define what line to draw the battery indicator on
+int BATT_LINE=29;
+// define the screen position of the battery indicator
+int BATT_POS=LEFT_ALIGN;
+// define what line to draw the clock on
+int TIME_LINE=30;
+// define the screen position of the clock
+int TIME_POS=LEFT_ALIGN;
+
 char* MENU_HEADERS[] = { NULL };
 
 char* MENU_ITEMS[] = { "Boot Android",

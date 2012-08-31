@@ -98,11 +98,17 @@ void show_power_options_menu() {
 }
 
 /* On the off chance that your device requires a non-standard command
- * to reboot from recovery simply replace that command here
+ * to reboot or power off from recovery simply replace that command in
+ * one of the following.
  *
  * It is highly unlikely you will need to change this for your device
  * this was added for the soul purpose of patching reboot in the Amazon
  * Kindle Fire which uses a binary command to reset the idme bootmode. */
 void pass_normal_reboot() {
 	__system("/sbin/reboot_system");
+}
+
+void pass_shutdown_cmd() {
+	__system("/sbin/nbmode");
+	reboot(RB_POWER_OFF);
 }
