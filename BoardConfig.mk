@@ -111,6 +111,8 @@ TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/amazon/otter/recovery/recovery_ui.c
 BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
 RECOVERY_BUILD_IN_LANDSCAPE := true
+BOARD_TS_MAX_ROWS := 27
+
 
 # Do da wifi
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
