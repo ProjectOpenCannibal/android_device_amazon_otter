@@ -111,6 +111,8 @@ TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/amazon/otter/recovery/recovery_ui.c
 BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
 RECOVERY_BUILD_IN_LANDSCAPE := true
+RECOVERY_DEVICE_DOES_NOT_SUPPORT_SDEXT := true
+RECOVERY_DEVICE_HAS_NO_VIBRATE := true
 BOARD_TS_MAX_ROWS := 27
 
 
