@@ -168,6 +168,7 @@ RECOVERY_BUILD_IN_LANDSCAPE := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_CUSTOM_RECOVERY_UI := ../../device/amazon/otter/recovery/recovery_ui.c
 BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
+TARGET_PRODUCT_NAME_IS_NOT_DEVICE := blaze
 
 #BOARD_TS_MAX_ROWS sets the MAX_ROWS amount. Use this to limit the height of the touch surface
 BOARD_TS_MAX_ROWS := 27
