@@ -175,6 +175,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# Copy over the custom reboot scripts and their binary counterparts for
+# recovery (courtesy of DoomLoRD), the new fff and postmode changes to
+# the board config should make these unncessary but I want to keep them
+# for now for compat with FFFe (for dualboot).
+PRODUCT_COPY_FILES += \
+    device/amazon/otter/recovery/root/sbin/fbmode:recovery/root/sbin/fbmode \
+    device/amazon/otter/recovery/root/sbin/nbmode:recovery/root/sbin/nbmode \
+    device/amazon/otter/recovery/root/sbin/rcmode:recovery/root/sbin/rcmode \
+    device/amazon/otter/recovery/root/sbin/reboot_fastboot:recovery/root/sbin/reboot_fastboot \
+    device/amazon/otter/recovery/root/sbin/reboot_recovery:recovery/root/sbin/reboot_recovery \
+    device/amazon/otter/recovery/root/sbin/reboot_system:recovery/root/sbin/reboot_system
+
 #$(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/amazon/otter/proprietary/imgtec/sgx-imgtec-bins.mk)
 $(call inherit-product-if-exists, vendor/amazon/otter/otter-vendor.mk)
