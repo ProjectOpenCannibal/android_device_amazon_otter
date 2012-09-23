@@ -165,7 +165,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 TARGET_BOOTANIMATION_PRELOAD := true
 
 BOARD_SUPPRESS_EMMC_WIPE := true
-BOARD_CUSTOM_RECOVERY_UI := ../../device/amazon/otter/recovery/default_recovery_ui.c
+BOARD_CUSTOM_RECOVERY_UI := ../../device/amazon/otter/recovery/recovery_ui.c
 BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
 
 #BOARD_TS_MAX_ROWS sets the MAX_ROWS amount. Use this to limit the height of the touch surface
