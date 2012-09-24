@@ -164,6 +164,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
 
+RECOVERY_BUILD_IN_LANDSCAPE := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_CUSTOM_RECOVERY_UI := ../../device/amazon/otter/recovery/recovery_ui.c
 BOARD_CUSTOM_RECOVERY_POWER_PROFILE := ../../device/amazon/otter/recovery/custom_power.c
