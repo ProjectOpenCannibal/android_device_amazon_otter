@@ -174,3 +174,5 @@ TARGET_PRODUCT_NAME_IS_NOT_DEVICE := blaze
 BOARD_TS_MAX_ROWS := 27
 
 DEVICE_RESOLUTION := 1024x600
+#disable touch boundary cause it locks up on certain devices (landscape primarily)
+BOARD_TS_NO_BOUNDARY := true

@@ -42,9 +42,12 @@ int TOUCH_NOSHOW_LOG = 0;
 	these have to be found by setting them to zero and then in debug mode
 	check the values returned by on screen touch output by click on the 
 	touch panel extremeties
+
+	These will probably be moved somewhere else as they are now configured
+	during first boot.
 */
-int maxX=1024;		//Set to 0 for debugging
-int maxY=600;		//Set to 0 for debugging
+int maxX=0;
+int maxY=0;
 
 /*
 	the values of following two variables are dependent on specifc device resolution
@@ -57,6 +60,9 @@ int resY=600;		//Value obtained from function 'gr_fb_height()'
 	set the following value to restrict the touch boundaries so that
 	only the buttons are active instead of the full screen; set to 0
 	for full screen and debugging
+
+	same as the max settings this will likely be moved somewhere else for
+	initialization as it is set during calibation
  */
 int touchY=0;
 
