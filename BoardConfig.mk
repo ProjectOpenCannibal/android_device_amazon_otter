@@ -117,7 +117,6 @@ BOARD_TS_MAX_ROWS := 27
 DEVICE_RESOLUTION := 1024x600
 TARGET_PRODUCT_NAME_IS_NOT_DEVICE := blaze
 
-
 # Do da wifi
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := libCustomWifi
@@ -137,3 +136,5 @@ WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/softap/firmware_ap.bin"
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
+#disable touch boundary cause it locks up on certain devices (landscape primarily)
+BOARD_TS_NO_BOUNDARY := true
