@@ -138,4 +138,4 @@ WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/softap/firmware_ap.bin"
 BOARD_HAS_LARGE_FILESYSTEM := true
 #disable touch boundary cause it locks up on certain devices (landscape primarily)
 BOARD_TS_NO_BOUNDARY := true
-BOARD_RECOVERY_RELEASE_TYPE := 2.1
+BOARD_RECOVERY_RELEASE_TYPE := v2.1 REL
